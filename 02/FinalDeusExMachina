@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Nobody">
+
+
+  <meta name="subtitle" content="旧物站">
+
+
+  <meta name="description" content="Into Oblivion">
+
+
+
+<title>御伽之国的鬼岛 第六章 最后的机械降神 | Legacy</title>
+
+
+
+<link rel="icon" href="/favicon.ico">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+  };
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+    let isDark = document.documentElement.classList.contains("dark");
+  })();
+
+  $(document).ready(function () {
+    // init icon
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = document.documentElement.classList.contains("dark");
+    $("#theme-icon").attr("icon", isDark ? "ri:moon-line" : "ri:sun-line");
+
+    function toggleGiscusTheme() {
+      const isDark = document.documentElement.classList.contains("dark");
+      const giscusFrame = document.querySelector("iframe.giscus-frame");
+      if (giscusFrame) {
+        giscusFrame.contentWindow.postMessage(
+          {
+            giscus: {
+              setConfig: {
+                theme: isDark ? "dark" : "light",
+              },
+            },
+          },
+          "https://giscus.app"
+        );
+      }
+    }
+
+
+    // toggle dark mode
+    function toggleDark() {
+      let isDark = document.documentElement.classList.contains("dark");
+      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+      isDark = !isDark;
+      document.documentElement.classList.toggle("dark", isDark);
+      $("#theme-icon").attr("icon", isDark ? "ri:moon-line" : "ri:sun-line");
+      if (prefersDark === isDark) {
+        localStorage.setItem("hexo-color-scheme", "auto");
+      } else {
+        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
+      }
+      toggleGiscusTheme();
+    }
+    $("#toggle-dark").click(toggleDark);
+
+    // listen dark mode change
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+        if (setting === "auto") {
+          document.documentElement.classList.toggle("dark", e.matches);
+          $("#theme-icon").attr(
+            "icon",
+            e.matches ? "ri:moon-line" : "ri:sun-line"
+          );
+          toggleGiscusTheme();
+        }
+      });
+  });
+</script>
+
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200 relative">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" id="logo" src="/images/result.svg" alt="Legacy" />
+          Legacy
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        御伽之国的鬼岛 第六章 最后的机械降神
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-3">
+        
+          <a class="hidden sm:flex" href="/archives">Posts</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Github" target="_blank" rel="noopener" href="https://github.com/Chui-shen">
+              <iconify-icon width="20" icon="ri:github-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5 hidden sm:flex" title="Github" href="rss2.xml">
+          <iconify-icon width="20" icon="ri:rss-line"></iconify-icon>
+        </a>
+        <a class="w-5 h-5" title="toggle theme" id="toggle-dark">
+          <iconify-icon width="20" icon="" id="theme-icon"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/archives" class="flex h-12 sm:h-auto items-center">Posts</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="pt-14">
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+<!-- toc -->
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        御伽之国的鬼岛 第六章 最后的机械降神
+      </h1>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
+            <time>2023-09-24</time>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
+            <span>15 min</span>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
+            <span>4.8k words</span>
+          </span>
+          
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
+    <p>凝为血色的赤红天空投下漆黑的云影，纽约市郊的艾尔伯约庄园静静矗立着，为云影凸显得犹为阴森。托马斯·艾尔伯约坐在自己庄园某处楼房的二楼书房，处理着一批白宫的公文。<br>“可怜汤姆走进艾尔伯约庄园呵，这庄严大地上的严肃建筑。”两个穿着体面的男管家，一动不动，任由“汤姆”将这两个人影最后的精魄吸干。</p>
+<p>美军的军用机器人与大量身着外骨骼的陆军军人将他包围，但都被撕的七零八落。但诡异的是，机器人和军人们被摧残的躯体，在灵魂飘散之后，被鬼驱使发出了令人毛骨悚然的笑声。<br>“你究竟是什么？”艾尔伯约启动了所有防御系统与求助系统，均失效了，看来这个杀手早有预谋。</p>
+<p>那嘴边的血色犹未干透的鬼说话了：“我是万物中的孔洞，我将地狱带致人间，并以万物抑灭。”天空中降下数百赤色红点，并非天火之罚，而是美军的军用无人机。无数火焰在同一刻燃烧，汤姆褪去人的皮肉，一步步从艾尔伯约豪华奢侈的园林走向黑色的大楼。看着远方的液态机器人，以及身后不断发射着无效子弹的无人机。他不由自主地笑了：</p>
+<p>“你这是在浪费时间，先生。”</p>
+<p>仙人看着眼前的刘泽，哑然失笑。他所寻求的答案，在别的地方，要么是刘泽被摩多罗耍了，要么就是他蠢到没去问摩多罗。不论如何，按计划行事。</p>
+<p>“我搞不懂你在说什么。一切的线索都指向你，菲勒犹若斯，烟雨之花……若你不是幕后黑手，那你也起码是位知情人。”刘泽坐在棋桌上，信手拿起一枚棋子，是象。</p>
+<p>“真想不到，奈她怎么教你的……竟轮得到我去教你做事。”仙人摊开手，“我只能说，即使一个人能像你一样在每时每刻存在，也做不到看到一切。但你来找我，就显得太不明智了……菲勒犹若斯死后，话说回来，我已许久不曾有过棋友了。来一局？赢了我告诉你。”</p>
+<p>刘泽静默片刻，试探性地回了一句：“和棋黑胜？”</p>
+<p>“自然和棋我胜，你面子可不比你杀的那个风神大。”此刻一切都陷入了宁静，仙人冷峻的眼神让刘泽心神微颤，但是，这可能是唯一的线索了，他必须接受挑战。</p>
+<p>“好。”</p>
+<p>鬼行走之地，都已成了焦土，但讽刺的是，造成此等伤害的，却是艾尔伯约自己的武器。鬼周身缠牵的，是鬼灯般的红色之火，是他尚未消化的死灵。碳化的枯叶，死色的土，倾倒于乱神怪力之下的高墙，无法再聚合的聚合物，遗忘自我原形态的记忆金属……已无法消耗它更长的时间。“准备好受死吧，与一切地域的通讯连接都被切断了，我猜你们还有五秒能话。”</p>
+<p>“五秒。”鬼伸出枯枝般的手臂，将厚度超过十三米的钢门击碎，只剩下残余的碎裂钢块。</p>
+<p>“四秒。”机器与身着动力装甲的美军士兵们在不到一秒便被全部肢解，鬼走上楼梯，一遍向上走一边用细长的双臂撕碎承重墙体，鬼火燃烧着地毯，顺着雕刻细致的木制扶手，天启末日一步步走上去。</p>
+<p>“三秒。”鬼冲向艾尔伯约，“胆小鬼，胆小鬼，告诉我，你会跳方丹戈舞吗？”</p>
+<p>“不会！”艾尔伯约按下按钮，办公室在一瞬间如同一枚火箭般被发射出去。鬼在巨大的冲击下稳丝不动，一把抓住了艾尔伯约的手。</p>
+<p>“两秒！”</p>
+<p>“指令：黄色7！”紧随而至的是腾空升天的爆炸。全副披挂的艾尔伯约手臂断裂，迸出大量的血液，向远方极端飞去。鬼放出黑色的线条一般的丝线，将他的关节缠绕绑缚。</p>
+<p>“一秒！”它畜生的双手，撕裂了人的背脊，从中将心脏拿出。充血！最后一次心跳！最后一次呼吸！最后一段思维！最后一点的知觉。坠落，它的肉体就此倒下，再也无法起来。他的肉体，自然最精巧的工艺，自此陨作尘泥。</p>
+<p>汤姆将艾尔伯约的面皮割下来：“或许我并不需要这样做，但是这么干，挺好玩的。”他将脸贴在自己的脸上，露出了一个完美的笑容。“我不笑并不意味我不笑。”</p>
+<p>“多三兵，必胜残棋。”</p>
+<p>“未必，车八平六。”</p>
+<p>“马四进三。”仙人的笑容凝固在了脸上，不自觉地看向左下方。</p>
+<p>“你说得对，确实与我有些关系，这档子事。”仙人摊手，说。</p>
+<p>“怎个有关系法？”刘泽站了起来，发问。</p>
+<p>仙人从脚边捡起一片枯叶，放入茶壶：“你听说过御伽之国的鬼岛吗？过去鬼居住的地方。”</p>
+<p>“在他们被关进血池地狱之前？”</p>
+<p>“是啊，鬼是与众神一样的未经生存战争而产生的生物。神明不允许他们存在，于是二十万年前，三相女神赫卡提亚将人代的先驱，唯物文明阿加尔塔毁灭后，创造了血池地狱，将三个鬼族押入血池地狱。但几千年前，在漫长的牢狱中，鬼族残余的数百鬼卒看到了希望，一个年轻的风神前来接管此地。在上万年的折磨中，鬼或死，或染上生存战争的污秽。”</p>
+<p>“于是我们以力量诱惑他，我们问他，对地狱中石油的力量是否感兴趣。”仙人撕碎了自己的面皮，吸食殆尽自己用作伪装的肉体的血，如同他在血池地狱中积累死灵的力量一样。</p>
+<p>“不必读韦德局长的报告了，总统先生。”</p>
+<p>“艾尔伯约”冷峻而高大的身躯不知何时走到了总统办公室的门口。除了拜登本人以外，没有人或物能“看到”他的存在，他已遁入了无形。老朽腐烂的总统坐在椅子上害怕地看着他，颤颤巍巍，仿佛要开口，仿佛要谈条件，但他根本就不知道要说什么，更不知道自己对面的是谁。</p>
+<p>“死吧。”拜登人头落地，但却不流血。“艾尔伯约”拾起人头与对讲机：“指令：黑色42，密码：623532。”白宫所有的房间都进入了最高防御状态，一支机械臂将核手提箱送到了他面前。</p>
+<p>“你不妨也笑一笑吧，因为我来了。”他在完全的寂灭中感受到自己的躯体由人触摸。</p>
+<p>“你是什么人？我在哪儿？我要干什么？”他只能在心中思索，他并不意识到他没有嘴，不能够发声。</p>
+<p>“我是摩多罗隐岐奈，后户之神，秘神。我要把你搭救，而你只需要完成一个任务，那就是你去为了你自己而复仇，我要重新告诉你你的真名，你的名字是张以勒。”</p>
+<p>男子抱着头，仿佛无穷的痛苦回到了他的脑中，他只能不断回忆，他没有眼睛，因此没有视觉，他只能想象。</p>
+<p>“见之。”摩多罗一笔一画给他勾上了双眼。张以勒只看见一个漂浮在青红色空中的金发女人，在用铁笔撕破他没有五官的脸。他想要尖叫出来，但是他没有嘴。</p>
+<p>“闻之。”他逐渐恢复听觉，感受到自己的轮廓正在以一种超自然的方式逐渐成型。他可以听见刻刀一样的笔划过自己面部线条兮兮梭梭的声音了，他感受到自己可以挪动自己的脸皮了，他感受到双眼的转动了，他感受到生命的活动了。</p>
+<p>“语之。”金发女子的声音逐渐变得满意起来，“好了，你现在感觉如何，张先生？”</p>
+<p>“啊啊啊啊——”他终于尖叫出来，比一切魂灵的哀鸣都要可怕，因为一个人被剥夺了形体、思想与灵魂之后，再一次拥有它们，就要如同婴儿降临这个世界一般哭泣着迎接新生命。</p>
+<p>“存在还是毁灭，不再是问题。”仙人露出了扭曲狰狞的笑容，像是一朵被撕碎的花，又像一个小丑娃娃，不断地嘲讽着对手的愚鲁与傲慢。</p>
+<p>“现在我成为了死神，世界的毁灭者。”它向全世界所有的目标坐标，发射了战略核导弹。“艾尔伯约”笑着撕碎了周围的一切。白宫坍塌毁灭，将万千人掩埋，鬼火将华盛顿特区点燃，要在核弹到来之前让这个城市率先成为一片焦土。</p>
+<p>“也就是说，是你在背后操纵这一切，你究竟是鬼还是仙人？”</p>
+<p>仙人笑答曰：“这重要吗？不过我确实是从血池地狱爬出来的。我乃寂逸鬼王，此乃我原初之名。你已经来不及了，来不及阻止我击碎人代。请看人代在人的至高杰作，最伟大的武器下落幕！”</p>
+<p>“御伽之国的鬼岛，童话，Otagi，御伽。不过只是一个幌子，只是为了浪费你的时间罢了。我为什么让你赢这局棋？只是为了让你不离开罢了。你有天大的优势还有什么用？”<br>棋局，思维，显象图画，逻辑，概念，他早已满盘皆输。</p>
+<p>“我为何在此地？”飘入月面之门的不死之烟发问了。</p>
+<p>“因为你要被见、被闻、被语。你需要在完成你的使命之后，了解你所促成的伟业。”门后的世界名叫后户之国，坐在轮椅上的摩多罗已经等候多时。</p>
+<p>“你在人世停留的几百年，让人类能够减缓文明的速度，在完全克服了神代之后，走向下一个阶段；你所蜕去的皮囊，成为了我所选中的棋子的力量的基石。”摩多罗如此说道，“而且，我还对这枚棋子有一个特殊的计划。他到了时候就一定会知道，因为这是他唯一的机会。经过他的手，万事万物都会改变。”</p>
+<p>“我不明白，这是什么意思？”紫香花逐渐从流动的空间中构成形体。“前两者在你提及之后我都能够明白。可「万事万物都会改变」？你究竟在指什么？你究竟欲求什么？”</p>
+<p>“我从人类身上学到的最重要的一点，就是，”摩多罗继续说道，“如果要展开一场变革，那这场变革应当大一些，需要激化矛盾，造成完全崩坏，然后我们才可以进行展开规划将这个世界按照理想的样子重建。”</p>
+<p>“作为一个神，我充分地意识到了，神代在我们「离开」人世之后并没有终止，恰恰相反，人类在不需要我们的时代，我们并没有真正意义上地离开。失去力量的神明在慢慢地重聚力量，比神代更加可怕的时代即将到来。而神明本身也为了消灭人代而再度回到、聚集到人世间来。如同我所预料的，他们动用了非常规武器，人们难以拯救自身，一个由神掌握的末世即将到来。”</p>
+<p>“那么就只有一个办法，回到过去，重写时间线，将神对于人世的影响抹除。让神代的终结，真正意义上成为神代的终结，让神明——所有神明自觉退出游戏，在人类不再需要的时候识相地离开，真正意义上的离开。”</p>
+<p>“我不能够直接下场。所以我要让事情恶化到最可怕的地步，以至于这会是我选中的人唯一的方案。”</p>
+<p>“可是，无论他做什么，总会有另外的神不会停手的，你不会没有考虑到这点吧。”花朵如同幻想一般，弥散着身躯感受非物质世界的与众不同。她质疑着神的行为。</p>
+<p>“我还有最后一招，杀鸡儆猴。我要以其人之道，还治其人之身。所以在风神死前，我还布置了一个陷阱，我要让他们中最奸淫邪诈的那一个得到应有的惩戒。唯有如此，他们才会放弃他们倒行逆施的行为。”摩多罗笑道。</p>
+<p>“那赋予我力量的紫香花，它的力量从何而来？既然这里是蓬莱仙岛，也就是御伽之国的鬼岛，那么我的力量难不成来自于你们鬼？”刘泽淡淡询问道，他在强装镇定。</p>
+<p>“你对于鬼族的力量一无所知，实际上我们都知道那朵花的出现与我无关。这一切都是他的安排，但是摩多罗堂堂后户之神，向你将一切关键的信息隐瞒，让你在此刻一手好牌打得稀烂！”</p>
+<p>“我还有最后一个问题，为什么众神会默许你们离开血池地狱？我还以为是他们把你给关进去的呢。”刘泽靠近鬼王，低声问道。</p>
+<p>“很简单，因为我与神们建立了合作关系。鬼被释放，神不必自己动手就可以消灭人代的唯物文明，重新让人类回到神代，回到依赖神明和信仰的朦胧时代。在一场全球核战争之后，科技回到石器时代水平。只有被神选中的愚昧的人类才可以存活，这样，他们就可以复活神代。”</p>
+<p>“摩多罗隐岐奈啊！躲在后户之国发号施令的你还能干些什么？派了一个童子，就以为自己能打发我了？真是可笑，你的计划全都打水漂了，等着在失去信仰之后被遗忘，沦入毁灭吧。”鬼王向着晦暗破裂的天空呼啸道。</p>
+<p>摩多罗不可能没有想到这一切，刘泽想道，而自己已经改变了许多次过去，唯一能改变过去的方式就是向更远的过去跃迁。等等，他提到了，神代？刘泽突然意识到了向神代跃迁，是唯一的可能。而且唯一能够阻止这一连串事件的举措，就是在二十万年前，鬼族还未被生存战争污染，风神还未到来时，摧毁血池地狱。</p>
+<p>刹那间，故事回到了一切的起点。刘泽意识到摩多罗的真实意图后，瑟瑟发抖。如果人类还没有经历核战争，刘泽就会顾忌到无数条人命，不可能下狠手重启时间线，</p>
+<p>“见之！闻之！语之！这便是秘神的真姿！人代文明的缘起，若离开我等障碍之民，不过是一张白纸。”摩多罗抛下了轮椅，站了起来。紫香花与他穿过门，麦克与王刚等候他们已久，他们进入相位的世界，在那里，他们可以躲离时间线的影响。死灵无穷无尽，由于核战争而死去的亡灵充盈着几近无边无际的后户之国。御伽之国的鬼岛在死灵的催熟下百花齐放，唯独没有紫香花。鬼王欣赏着花朵和死亡，赞美这诗意的转化，没有留意到刘泽已经离开。</p>
+<p>以特异独行之人对抗神话，以后户之国对抗御伽之国，以人类对抗鬼神，跨越时空的战争，将由他画上一个最后的句号。他穿过后户之国无限的门，一个又一个，回到越来越早的时间。周围的青灰色淡化模糊分裂四散，被拉成抽象的速度线，然而每一条线，甚至每一个点在过去、现在、将来都有可能是一个可以穿过的面，他在一个高维的超空间轨道上向一个精准的时空节点奔跑着。周围是死灵的悲歌，不知被发配到哪里。事实上，现在地狱、天堂、众神之界已经完全陷入了无政府状态。</p>
+<p>“很不巧啊，我的孩子。你的主人已经走了，这里现在由我接手！莫要尝试逆转时间的洪流，否则即使是你，我也会施以惩戒！”耶和华以一个严厉的老人的形象站在他身前，阻挡住他向前的路。他知道最后的救赎和最后的征程注定不会顺利。“我将让他们乘诺亚方舟生存，让他们再次明白神明的恩典的伟大。让他们再次明白，我乃自有永有之神。”</p>
+<p>“艾尔伯约”在核爆中对着残余的灰尘与陨末大笑：“疯子带着瞎子走路，本来是这时代的一般病态。把您的胳臂给我；让可怜的汤姆领着你走。”黑色的胳膊逐渐化为齑粉，“艾尔伯约”在震颤中，最后说出了一句，“Cur non？”</p>
+<p>“所以你们还是不肯放过我们。”鬼王欣赏着花，与整座繁华盛放的岛一同化作樱色的花瓣，飘向早已不剩下多少生命的远方，“或许我应该祝他成功。但谁知道呢？我的生死不过是你们弹指一挥间罢了。我诅咒你们所欲求所创造的这世界活不长久，我预言将有一个新的、更美好的世界来取代它。”</p>
+<p>于是自始至终，作为一个挑战权威的人，作为一个相信自己能够以少年的力量创造奇迹的人，作为一个特立独行的人，他微微一笑：“放马过来。”他时刻准备着奔向远方，人与神站在原地对峙着。</p>
+<p>绘子此时突然现身，展开了后户之门。耶和华未能反应过来，立刻被放逐至数百年之外，二人相拥着飞奔向时间的缘起。时间本身中的时间如同流体一般将二人浸没，在窒息、希望与痛苦的魂灵之间穿行，二人一神，在跨越时间的后户之国中追逐，这场人神之战决定着万事万物的究极命运。</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E7%99%BD%E9%93%B6%E6%A0%91%E4%B9%8B%E6%81%8B/">白银树之恋</a>
+        </span>
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/02/GravediggerOfBrokenEra" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          御伽之国的鬼岛 第七章&后记 破碎时空的掘墓人
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/02/TheKnightTheDemonTheJoker" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          御伽之国的鬼岛 第五章 血月樱花之国
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+
+  </div>
+</section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  <div class="flex items-center gap-2">
+    <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: inherit;">CC BY-NC-SA 4.0</a>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+
+  <div class="back-to-top box-border fixed right-6 z-1024 -bottom-20 rounded py-1 px-1 bg-slate-900 opacity-60 text-white cursor-pointer text-center dark:bg-slate-600">
+    <span class="flex justify-center items-center text-sm">
+      <iconify-icon width="18" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+      <span id="scrollpercent"><span>0</span> %</span>
+    </span>
+  </div>
+  
+<script src="/js/main.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      const mapleCount = "10";
+      const speed = "0.5";
+      const mapleEl = document.getElementById("maple");
+      const maples = Array.from({ length: mapleCount }).map(() => {
+        const maple = document.createElement("div");
+        const scale = Math.random() * 0.5 + 0.5;
+        const offset = Math.random() * 2 - 1;
+        const x = Math.random() * mapleEl.clientWidth;
+        const y = -Math.random() * mapleEl.clientHeight;
+        const duration = 10 / speed;
+        const delay = -duration;
+        maple.className = "maple";
+        maple.style.width = `${24 * scale}px`;
+        maple.style.height = `${24 * scale}px`;
+        maple.style.left = `${x}px`;
+        maple.style.top = `${y}px`;
+        maple.style.setProperty("--maple-fall-offset", offset);
+        maple.style.setProperty("--maple-fall-height", `${Math.abs(y) + mapleEl.clientHeight}px`);
+        maple.style.animation = `fall ${duration}s linear infinite`;
+        maple.style.animationDelay = `${delay}s`;
+        mapleEl.appendChild(maple)
+        return maple
+      })
+    });
+  </script>
+  
+
+
+  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+</body>
+
+</html>

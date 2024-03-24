@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Nobody">
+
+
+  <meta name="subtitle" content="旧物站">
+
+
+  <meta name="description" content="Into Oblivion">
+
+
+
+<title>御伽之国的鬼岛 第七章&amp;后记 破碎时空的掘墓人 | Legacy</title>
+
+
+
+<link rel="icon" href="/favicon.ico">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+  };
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+    let isDark = document.documentElement.classList.contains("dark");
+  })();
+
+  $(document).ready(function () {
+    // init icon
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = document.documentElement.classList.contains("dark");
+    $("#theme-icon").attr("icon", isDark ? "ri:moon-line" : "ri:sun-line");
+
+    function toggleGiscusTheme() {
+      const isDark = document.documentElement.classList.contains("dark");
+      const giscusFrame = document.querySelector("iframe.giscus-frame");
+      if (giscusFrame) {
+        giscusFrame.contentWindow.postMessage(
+          {
+            giscus: {
+              setConfig: {
+                theme: isDark ? "dark" : "light",
+              },
+            },
+          },
+          "https://giscus.app"
+        );
+      }
+    }
+
+
+    // toggle dark mode
+    function toggleDark() {
+      let isDark = document.documentElement.classList.contains("dark");
+      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+      isDark = !isDark;
+      document.documentElement.classList.toggle("dark", isDark);
+      $("#theme-icon").attr("icon", isDark ? "ri:moon-line" : "ri:sun-line");
+      if (prefersDark === isDark) {
+        localStorage.setItem("hexo-color-scheme", "auto");
+      } else {
+        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
+      }
+      toggleGiscusTheme();
+    }
+    $("#toggle-dark").click(toggleDark);
+
+    // listen dark mode change
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+        if (setting === "auto") {
+          document.documentElement.classList.toggle("dark", e.matches);
+          $("#theme-icon").attr(
+            "icon",
+            e.matches ? "ri:moon-line" : "ri:sun-line"
+          );
+          toggleGiscusTheme();
+        }
+      });
+  });
+</script>
+
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200 relative">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" id="logo" src="/images/result.svg" alt="Legacy" />
+          Legacy
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        御伽之国的鬼岛 第七章&后记 破碎时空的掘墓人
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-3">
+        
+          <a class="hidden sm:flex" href="/archives">Posts</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Github" target="_blank" rel="noopener" href="https://github.com/Chui-shen">
+              <iconify-icon width="20" icon="ri:github-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5 hidden sm:flex" title="Github" href="rss2.xml">
+          <iconify-icon width="20" icon="ri:rss-line"></iconify-icon>
+        </a>
+        <a class="w-5 h-5" title="toggle theme" id="toggle-dark">
+          <iconify-icon width="20" icon="" id="theme-icon"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/archives" class="flex h-12 sm:h-auto items-center">Posts</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="pt-14">
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+<!-- toc -->
+
+  <!-- tocbot -->
+<nav class="post-toc toc text-sm w-48 relative top-32 right-0 opacity-70 hidden lg:block" style="position: fixed !important;"></nav>
+
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        御伽之国的鬼岛 第七章&后记 破碎时空的掘墓人
+      </h1>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
+            <time>2023-09-29</time>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
+            <span>17 min</span>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
+            <span>5.2k words</span>
+          </span>
+          
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
+    <h2 id="第七章-破碎时空的掘墓人"><a href="#第七章-破碎时空的掘墓人" class="headerlink" title="第七章 破碎时空的掘墓人"></a>第七章 破碎时空的掘墓人</h2><p>“假如我是个写小说的，我肯定不会拿一个掘墓的的喃喃自语作为开头。如果故事只是把一个人丢进棺材里，埋到六英尺深的地下，那对于读者来说，是不是有点太枯燥了？”掘墓人望向无色的天，立于尘灰与消隐的石墓标之间，脚踩着一个空棺材。</p>
+<p>他露出满是褶皱的阴笑：“不过，也许这也有可能是个很好的故事。毕竟很有可能，这也是一个最后的故事，这世界的终章……”</p>
+<p>他从极深的土下翻找出一颗头骨，或许他已分不清头骨与活人的区别，他一直对死尸说话，他一直对棺材说话，他甚至对泥土说话。</p>
+<p>他有时捧起灰土，吹个四散去；拾起枯草，用它们接住并收集磷火。他将别的墓碑上的十字架拔起，堆到一个角落，靠在一个极为沉重的红漆棺材上。</p>
+<p>“他即使粉抹一寸深，不久不也成这模样？让他对自己的尸体笑笑吧。到那时，我自然会问他那个问题。”他将下巴骨拆下来，将一枚鬼火丢向那口未下土的新棺，那火焰燃烧着，在他青脸上映出蓝白色的光。</p>
+<p>金红色的剑斩断腐烂的黑水，是轩辕剑，是天丛云剑，是石中剑;是石油，是血液，是烈毒。无规律的战争，无形态的战争，无形状的战争，唯一决定成败的是意识。那把剑被绘子拿过，成了郎基努斯之枪，向神投去，唯一遗憾是未有十字架将他封死。</p>
+<p>伴随色彩的隐现，精神图象也开始战斗。首尾相接，如同白蛇衔着黑蛇，形成阴阳图画。哪怕是至白的神光之间，也有一个孔洞，这是摩多罗告诉他的。他所需做的是寻找，寻找那一个点，永匿于神格中的万物中的空洞。</p>
+<p>还有两万年，还有两万年的“距离”，就到了血池地狱之时。这初生的人间地狱引起了多少祸端？唯有自己能将这一切阻止。他明白，他已经没有退路了。</p>
+<p>“刘泽，你却要想，你一意孤行，造成了时间线整体崩坏。你无论停手，方能让人类历史留存，若是不停手，无事万物在物质界有破灭的风险，你要清楚！”两人并不停止战斗，耶和华在后户之国中大受限制，他们穿过无数道门，即将接近那个时间点。</p>
+<p>“我不接受你的谎言，作为即得利益者，你给我的电车难题我不作答。还有什么鬼话，就快说吧。你既是对「上帝」信仰的收集者，何必扮作毒蛇，诱骗亚当夏娃？”刘泽躲至盾后，绘子砍下了耶和华的左手，那手上执着破裂的圣杯。<br>“想给你自己来场安魂弥撒吗？”绘子问道，淡然地看向飘散而去的圣血。弥撒，对圣体的吞噬，自我欺骗和自我开脱。</p>
+<p>“毒蛇？若是没有那欲的盅惑，你们这些人怎会得到灵智？我乃第一推动力，但我也能将它抵消！你一意孤行，顽抗神意，就由我将你与时间永久渎神之罪冻封，如今你永不得见一物。而这世界要因你的一意孤行而毁灭！”耶和华展开右臂，圣血染红了一切。</p>
+<p>他现出极痛苦的脸:“罪人们、异教徒们，在时间的碎片中，接受血色的洗礼吧！”</p>
+<p>他们感到静滞，仿佛有种强力在阻止时间本身前进，他们看到时间流中的世界完全陷入了停摆状态，如同热寂。一切意识在时间中看到每一瞬间的自我，遁入苦海。</p>
+<p>二人深知到达其间已不可能，但他们仍能将动能给予火焰，寄希望于它能让血池地狱燃烧，但几乎在发出火焰的同一瞬间，时空的血色褪去，他们明白他们成功了，丧失了残余的意识。</p>
+<p>由此二十万年的征途，画上休止符。一束火花，炫丽绽放。在火焰穿过门之后，最后一扇门关上了。鬼族不再被监禁，神代实际意义上的终结……因已达成，果纷至沓来。</p>
+<p>血之幕被时间流冲破，火焰嵌入了数十万年的时间深度，那一天，后来被称为燧人氏的那位看到了一道纯洁无暇的光，从燧木上迸发出来，而至今，那火焰仍在燃烧。</p>
+<p>刘泽从朦胧中再次睁开眼，他的后背被开了一个调鲜血从其中灌注而出。”这就是代价，人之子，你已没有退路了。你挑战了一个不可能战胜的对手，现在我要给你一个你所应有的结局。异教徒，你只得死！”刘泽已数千年未曾受过伤，痛觉在无限的刺激下被激活到极致。</p>
+<p>他看见死的迫近了，不错，他正经历一场生存战争，而污秽通过他们，向整个时间流蔓延。而祂在狂笑不止，明明祂满盘皆输。</p>
+<p>“在摩多罗从相位空间回来之前，你们二童子将成为他计划的终级牺牲品。我先杀了你，再杀了她。”</p>
+<p>“别杀他！你根本就无法离开后户之国，所有的门都提前被我封住了，而你的「门把手」再已灰飞烟灭，那被我劈碎的圣杯里，如今经过「圣血洗礼」再也不见了不是吗？也就是说，如果我不给你开门，没有神或人能出去。”绘子抓住了耶和华的脚，艰难地欲求爬起。“除非你放过我们，我会将你送出后户。</p>
+<p>“不，不能把他放走……绘子，请不要。”即将失去生命的刘泽嘶吼着。</p>
+<p>“绽放吧。”「只要一句话，门就全开了。」耶和华放下他的身体，一拳击飞了绘子，祂正准备杀死二人之时，一只苍白的手，掐紧了他的胭喉。祂中计了！</p>
+<p>“你已经输了，耶和华。莫要问丧钟为谁而鸣，它现在正为你敲响。”刘泽缓缓站了起来，与绘子一起用力将门封上。</p>
+<p>“不，这不能是你，这不会是你！不应如此终结！摩多罗隐歧奈，你阴险狡诈！”枯干的喉咙，嘶哑的声音，死亡近了，不过它即将要来带走的是上帝本尊。</p>
+<p>“以勒啊，你是否愿意奉献你的生命，于这趟有去无回的任务？”坐在椅子上的人向张以勒问道。</p>
+<p>“我已是死者，无需多言，我既犯下错误，就要以一切偿还。我要让他下地狱。向这不仁者报仇，就算在天堂，我也杀他！”他充满了决心。</p>
+<p>金发女子在他的脸上刻下了自己的笑靥：“莫要责怪我给你脸上徒增无用线条点缀，在这让人感到残忍痛苦的世界上，当个笑面人倒是好些。”</p>
+<p>“死吧！”上帝无法挣脱这手的力，张以勒与他一起倒向无间地狱。他们穿过造物基底的黑洞，那引人下坠的引力，那绝对的毁灭，就连光也无法逃脱。就在同时，门关上了，青灰色的时空连续体震颤着，而张以勒死死抓住耶和华，将祂丢进了棺材之中。</p>
+<p>“你也许会问，无间地狱是什么样的？对于有些人来说，是无尽的无意义的寂寥时空，有的人觉得是他人，我觉得就只是无休止的苦难罢了。可能压力比我在凡世还要略小一点。”耶和华感到巨棺无法打开，过于沉重，以勒一锹一锹在他正上方铲土。“这压力也是个双关。”</p>
+<p>“事实上，我等了你很久了。我也在想有没有什么新奇的死法对你更合适，比如火刑、宫刑、炮烙立刑、水牢之刑，被圣血淹死，在十字架上被钉死，但我仔细考虑还是活埋最恰到好处！”以勒拍着掌。</p>
+<p>“你与摩多罗的斗争几手达成了平衡，若非我的参与，他们俩会死，你会全身而退，对吗？”耶和华疯狂地敲击着棺材板，但是完全无法打开，绝对死亡的象征力量将祂笼罩，他感受到一种割裂，一种释放。他听见，一种不安于死亡的宁静时的噪声。</p>
+<p>“两神相遇只有平手，对吧。他甚至不能直接下场，好在有我，那最后一枚，决定胜势的棋子。”掘墓人将他的坟堆成了一个完美的金字塔状，坐在上面，大声爽朗地说：“别敲了，我花了几千年来保证即使是你也出不去。我要让你感受到被埋没的滋味。到头来我才是赢家！”</p>
+<p>“你没法拒绝你的天性，我也无法拒绝我的。也许正因如此，贪婪成了你的毁灭之因，你这信仰的吸血鬼呵。”以勒露出苦涩的笑，将鬼火掷入地下。</p>
+<p>“接下来我要问你一个问题。”鬼火焚烧着神的躯体。“你过去没有回答，我猜你现在也不想回答。”</p>
+<p>“是楠木的还是橡木的？”神明感受到那空洞如同癌细胞一般在扩散，那是所有建构之下的不完美之处，那是自有永有的空虚，万物中的空洞。</p>
+<p>“是楠木的还是橡木的？”原本最完美、最细腻、最无暇的地方，又多了一条裂缝。自以高傲的纯白崩碎破裂。</p>
+<p>“是楠木的还是橡木的？”死魂吞食着他友离破碎的残躯，黑色的弥撒仪式，它们如饥似渴地撕扯磨灭着空体。“不，这不应发生……”他本犹想说什么，现在连最后一声也噤默了，闪烁了，癌变了，几瞬腐烂了，毁灭了，最后无声无息地在历史的潮流中终结了。</p>
+<p>他走下飞机，走进杭州萧山国际机场，几经转线，他坐上了前往绍兴的地铁。旅人风尘仆仆，等到走进陌生的街道时，深夜让他感到疲惫。</p>
+<p>“当她飘上月球的时候，她看见在洁白无瑕的明月上，有无数个孔洞，在错误认知的极端纯色中的不完美，古人所认为纯净月光中的瑕疵，她并不是第一次看见这些洞，因为她过去看见它们，”他写道，“在万物之中。”</p>
+<p>他走进酒店，用组不成句子的普通话支吾了很久，才订好房间。他将东西放好，坐在原地坐了许久。犹豫了几刻钟后，他走出了房间。下起了小雨，他从容地走出，他根本不知道要去哪儿。</p>
+<p>“王氏宗祠是在？”“那边。”他奔跑上山，没看清路人的脸，但他看见了一种惊愕与错异。</p>
+<p>“瑕疵，污秽，沾染，孔洞……对自然状态的违背是它们的因，也是它们的果。”凌晨三点四十分，他在疲惫与迷茫中回想起十几年前自己写下的句子。</p>
+<p>他跌倒了，手电筒坠入了深坑。他并不尝试去捡，而是看向毫无意义的一个缺口，一个不自然状态，不自然的自然。</p>
+<p>“一个大到可以容纳一切事物的空间，一个会让你忽略生活中一切美好的影子。”他写道。他爬起来，继续向上走。他听见有人在吹笙，那人在哪儿？在山上吗？</p>
+<p>“流在我血里的究竟是什么呢？”石台阶上长着青绿色的青苔，石绞的线条格外清晰，湿润感透过冬日旅人特有的厚重的衣衫，格外慢地沾染了他的身体。远方的寺庙的钟声伴随着思乡之情淡入了背景，他其实并不知道这时候寺庙不敲钟，这声音来自别处，但是他就如此幻想着。</p>
+<p>雪落了下来，白色点缀了他的黑色衣衫，清晨四点，CIA探员王刚走到了他自认为的王氏宗祠，也许是，也许不是。但在这座蛛网密结，朱漆败落的古建筑旁，他找到了一处内心的宁静，让他真正地认识到在此刻一切都结束了。</p>
+<p>他打开Instagram，看见正在享受着圣诞节休假的马克在夏威夷群岛十分悠闲的样子。自己身边只有自己，正如同那天在岩洞中见到风神一样，孤身一人。青灰色的国度、血月樱花与刚欲之海，对他来说已经恍若隔世。</p>
+<p>他如同每一个人一样在冬日清晨的郊外感到寒冷，但他并不想离开，他打算在山上待到日出。山是青黑色的，头顶是苍白的，他仿佛看见，远方红色的光照过来。他听见钢琴的声音，是无情的悲歌，是无意的伤怀。越是离调，越是虚无，越是飘渺，就越能激起人的情感，让人的心也感受到哀怨。</p>
+<p>“我让一束光照进那影子，那里面什么也没有。”</p>
+<p>“我感到一种空虚，那感受在我所有的思想与行为中生长，最终导致整体破裂。如果在最终我学到了什么东西的话，那就是……”</p>
+<p>“你们俩干的不错，不过恐怕在这个新的时间线，我们又有新麻烦了。”坐在轮椅上的秘神治愈着两个受伤的凡人。</p>
+<p>“新麻烦？”</p>
+<p>“神代的倒行逆施者被我们击败之后，人类的进步又引发了新的问题，这是不可避免的。我还是不能干涉，只能点拨，你们也只能自求多福了。”</p>
+<p>曾经被称为血池地狱的地方，在矿工们上报此处有一处不合理的巨大地下空间之后，「逆视」组织前来接手。「轻盈者」捡起了一片樱色「花瓣」状的物体，若有所思。</p>
+<p>鬼岛不再，消隐入了幻想之中；时间流在无限的分裂和收束中恢复了平静，后户之国很快恢复了作为生死枢纽的工作；血池地狱不复存在，仿佛在离调音的弥散之下，一切都在走回正轨，但是那个空洞还是存在。</p>
+<p>“我们如果要把他救出来，又该如何解决公关问题？”</p>
+<p>“你就说麦克在潜逃的过程中被我们的特工杀死了，由于我们一向的原则，尸体由我们保管。”「轻盈者」说道。</p>
+<p>“他究竟哪里这么重要？”特工问道。</p>
+<p>“我凭直觉推测，他是唯一一个可以解释那「花瓣」是什么的人。”「轻盈者」将自己传送到了一座精神病院中，一个纯白的空间，一个穿着橘色囚服的老人。两人相视一笑。</p>
+<p>“你好，伊万诺夫斯基先生，你可以叫我「轻盈者」。我是来接你离开这里的。”</p>
+<p>“倘若你想要得知那花瓣的事情，我建议我们离开了之后再聊。”麦克露出了老人狡黠的笑容，一刹那，二人就到了月球的背面。</p>
+<p>“欢迎来到黑星基地。”</p>
+<p>乌鸦飞起，掘墓人陷入了狂笑之中，“你听到了吗？所有人都赢家，只有你输了，只有你失去一切。这可真是个笑话，不是吗？”笑声激荡溢出了无间地狱。</p>
+<p>“我要把它填满。”王刚以包中拿出一瓶红酒和一个酒杯，任雪花飘入杯中，让这不纯的晶体折射映像东方天空的鱼肚白。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>在我结束《十三而立（上）》之后，我几乎很快就写了下半部分，很可惜的是，比起本来就不够好的前作来说，这部日后谈更差劲，几乎让我丧失了续写《十三而立（上）》的希望，我便开始把中篇小说的计划向后推，开始聚焦于写一些短篇小说和一些杂文，我的杂文由于各种原因也收到了各种批评，不论如何，这段时期的作品——《日记八集》很明显不够好，有的短文我甚至都不敢发到网站上。</p>
+<p>后来的《白银树之恋》的结构与这部《御伽之国的鬼岛》很相似，不过我的文笔和叙述都没有沉淀到这部的地步（这部这个等级的叙述也及格不了啊），所以我拖延了很久，不想要写《白银树之恋》的章节。时间过的确实很快，2022年的断更到2023年的《鬼岛》之间，我几乎有半年没写任何有价值的东西。</p>
+<p>在一开始动笔写的时候，作为一个刚入坑的车万人，我当时其实很好奇，如果让我来叙述东方的故事，能不能讲的好？于是我将《东方刚欲异闻》在脑子里一过，用一种直接、引经据典和诡异的方式讲这个故事叙述了一遍。然后就有了第一章《阿加尔塔的风神》。</p>
+<p>第二章也一样，我将《飘向月球、不死之烟》，《蓬莱传说》和一些我在《白银树之恋》中用到的意象全部结合到一起，同时设下一个引子，「只要一句话，门就打开了。」事实上我在后期强行更改了它的意义。</p>
+<p>第三章实际上是让我非常头疼的一个章节，因为我不知道要写什么——是要接着第一章还是第二章呢？然后我选择了挑战自己的极限，都不接，让它成为一个独立的故事。这个故事本身的抽象程度过于高，读者和我本人都不太喜欢，而且由于它本身的逻辑很难继续进行更改，所以我最后还是没在它身上动刀子。我想要在第三章创造一种独特的角度来同时批评宗教、倒退思想（整体的宗旨）和伪史论，但是我失败了，我玩的太过了。我完全没有能力去做这件事情，压力太大了，最后叙事彻底崩溃，我陷入了意识流写作的泥潭之中。至于第四章，实际上是用来接盘的一章，根本就不可能写好到哪儿去，只能说能够勉强的达意。</p>
+<p>过了很久，我才决定写遗失之章来再次扩充故事线，并且这次，我觉得起码比第三章写的要好。单独来看也是一个还行的故事。于是我使用第五章来重建我的故事架构，以王刚这个人物的视角的三幕戏，展现故事的过去、现在、未来的时间点，这个章节几乎是最长的章节。</p>
+<p>在写第六章之前，我看了看整体的评价，《御伽之国的鬼岛》的评价整体是两极分化的。这与我对它的初始估计其实是不同的，因为尽管它有这样那样的弱点和缺陷，我仍然认为它是我能够写出来最优秀的作品，于是我琢磨了小几天，决定将原定十二章的篇幅缩短到七章，用剩下的两章来完结全部的剧情。第六章的故事叙述压力巨大，但就在此时我想到了一个结局的主意，一个能将故事完美的收拢在一起的主意，将摩多罗隐岐奈引入这个故事，以一个机械降神式的章节作为结尾。前三章给了后面收尾巨大的压力。不过，面对如此多的挑战和困难，我还是尽我所能让这个系列善终了，同时让它对接了《白银树之恋》中的世界观，这个世界观将会继续，并且我已经有了它的蓝图。</p>
+<p>如果能的话，请一定要享受故事和生活。我将非常感谢！</p>
+<p>吹神求杀</p>
+<p>2023.9.29 中秋节</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E7%99%BD%E9%93%B6%E6%A0%91%E4%B9%8B%E6%81%8B/">白银树之恋</a>
+        </span>
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+    </div>
+    <div>
+      
+        <a href="/02/FinalDeusExMachina" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          御伽之国的鬼岛 第六章 最后的机械降神
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+
+  </div>
+</section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  <div class="flex items-center gap-2">
+    <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: inherit;">CC BY-NC-SA 4.0</a>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+
+  <div class="back-to-top box-border fixed right-6 z-1024 -bottom-20 rounded py-1 px-1 bg-slate-900 opacity-60 text-white cursor-pointer text-center dark:bg-slate-600">
+    <span class="flex justify-center items-center text-sm">
+      <iconify-icon width="18" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+      <span id="scrollpercent"><span>0</span> %</span>
+    </span>
+  </div>
+  
+<script src="/js/main.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      const mapleCount = "10";
+      const speed = "0.5";
+      const mapleEl = document.getElementById("maple");
+      const maples = Array.from({ length: mapleCount }).map(() => {
+        const maple = document.createElement("div");
+        const scale = Math.random() * 0.5 + 0.5;
+        const offset = Math.random() * 2 - 1;
+        const x = Math.random() * mapleEl.clientWidth;
+        const y = -Math.random() * mapleEl.clientHeight;
+        const duration = 10 / speed;
+        const delay = -duration;
+        maple.className = "maple";
+        maple.style.width = `${24 * scale}px`;
+        maple.style.height = `${24 * scale}px`;
+        maple.style.left = `${x}px`;
+        maple.style.top = `${y}px`;
+        maple.style.setProperty("--maple-fall-offset", offset);
+        maple.style.setProperty("--maple-fall-height", `${Math.abs(y) + mapleEl.clientHeight}px`);
+        maple.style.animation = `fall ${duration}s linear infinite`;
+        maple.style.animationDelay = `${delay}s`;
+        mapleEl.appendChild(maple)
+        return maple
+      })
+    });
+  </script>
+  
+
+
+  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+</body>
+
+</html>

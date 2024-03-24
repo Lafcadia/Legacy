@@ -19,7 +19,7 @@
 
 
 
-<title>Legacy</title>
+<title>黄金时代：失落失眠的黄金之城之夜[2] | Legacy</title>
 
 
 
@@ -158,7 +158,7 @@
         </h2>
       </a>
       <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
-        
+        黄金时代：失落失眠的黄金之城之夜[2]
       </div>
       <div class="flex-1"></div>
       <div class="flex items-center gap-3">
@@ -204,346 +204,160 @@
 </div>
 
   <main class="pt-14">
-    <section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">
-  <div class="flex flex-col h-48 items-center justify-center">
-    <h1 class="site-title text-4xl leading-relaxed">
-      Legacy
-    </h1>
-    <p class="text-gray-500 mt-2">
-      旧物站
-    </p>
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+<!-- toc -->
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        黄金时代：失落失眠的黄金之城之夜[2]
+      </h1>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
+            <time>2022-08-26</time>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
+            <span>4 min</span>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
+            <span>1.3k words</span>
+          </span>
+          
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
+    <p>(收录于白银树之恋，这是黄金时代篇的主线。)</p>
+<p>失眠原来是这样一种感觉，感觉自己以前感受到的难眠感皆是轻到不能再轻的。</p>
+<p>这大概是自己这一生最远的远行，而且也有可能回不来。马敖如此想道，马队里的人已经好几天没吃饭了，大家只能杀了骆驼吃，水也很快就不够了，唯一能喝的只有血水。自己的官袍已经破烂不堪。倘若真的碰到赤金之地的高贵隐士们，想必也要被嘲笑的吧。</p>
+<p>据说赤金之地的隐士们中，有不少是自己的远亲，是后羿在宋朝流离时无意间留下的后代。隐士们来到赤金之地，建立了雄伟的黄金之城，据说在他们手中，有古老的神代武器。而为了震慑洋人，一群崇古到不能再古的人就认为应该去黄金之城把后羿留在那里的古老武器拿回来。神代是什么时候他也不知道，应该是后羿之类的奇人常出现的时候吧。</p>
+<p>父亲对他说，莫大人帮他摆平了官司，为了这件大恩，马敖必须要为他做这件事。他去找莫文，他的教父，其实他内心深处并不信天主教，只是这样方便与洋人做买卖而已。莫文爬满岁月的沟壑的脸上阴云密布，他想起了十几年前这个孩子的父亲找他求他帮助他的时候，当时他可以说是身居高位了，说什么就是什么，可现在自己老了，别人有和他交易的资本了，他让刑部里的人保住马敖的性命，刑部答应了，将他释放。可刑部尚书突然翻了脸，要让马敖做一件几乎让他必死的差事，没有人可以找到黄金之城，而他最后只会粮绝水尽而死，他感到深深的愧疚。马敖只是说没事，然后带着马队启程出发了。</p>
+<p>「看！那是什么！」那是一颗闪耀着金色光芒的参天大树。上面刻着几十行奇怪的字，众人以为这是黄金之地的文字，但马敖却一眼就看出来了，这种字是自己家传的占卜龟甲上的字体，这有可能是后羿自己刻的，但他没有告诉其他人，只是默默地扒下了一小块树皮。他们继续前进没有多远就看见了一座在日光下熠熠生辉的城市，这就是黄金之城啊。整个城市就像一整块巨大的黄金，在夕阳下发出炽烈的光芒。他们大声呼喊着，寻求他们的帮助。他们骑着骆驼在城市里寻找黄金之民。</p>
+<p>直到马敖在一条巷子里看见一个左手乌黑，右手金色的男子，他用右手将一个瘫痪的人变成了一尊金雕。他才意识到，赤金之地的黄金，都是被那个男子的右手创造出来的。有一个胆大无比的人，尝试上去用刀砍断他的手，而那刀也变成了黄金。那个勇敢者，他冲上前去，却随着刀一起化作了黄金，死去了。</p>
+<p>队伍里的胆小鬼，万小二，不敢看那个男子的眼睛，他的眼睛里充满了纯粹的对黄金的欲望。他害怕自己也充满这种欲望，害死其他人；他的犹豫与间歇性的果断，使他发起了狂。他吞金自杀，跳进了干涸的金色井里。他那尸体腐烂在黄金之中，像他这么爱财的人，应该也不会对这个棺椁失望。</p>
+<p>马敖跑去尝试救万小二的时候，忘了他的妻子还在这个地方，马队的其他人散开跑了，没有把他的妻子带走。而他回来的时候，妻子已经化作了一座金雕。他悲痛欲绝，跪了下来，夜幕降临，黑暗席卷了一切，他失去了一切。就在那个贪婪的男子压抑不住自己的欲望，要将他变成金雕的时候，一支箭从背后穿过了那个男子的脖颈。男子七窍冒出一股黑色的液体，最后他自己也变成了金雕。他死了，马敖望向那个救了自己的人，却发现那人身高九尺，全身散发出一种太阳的光芒。救了他的人只是看着他，什么也没说，留下了一杯水和一只骆驼，离开了赤金之地。</p>
+<p>失眠原来是这样一种感觉，感觉自己以前感受到的难眠感皆是轻到不能再轻的。马敖失去了一切，逆着夕阳，牵着骆驼，背着一块块不知是什么化作的黄金向东行走，那一小块树皮却遗失了。躺在大漠的中心，静静地听风给他演奏的助眠曲。沙丘随风异形，而他随着风回到了故乡。</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E7%99%BD%E9%93%B6%E6%A0%91%E4%B9%8B%E6%81%8B/">白银树之恋</a>
+        </span>
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+        </span>
+      
+    
   </div>
-  
-  
-    
-    
-      <div class="relative pointer-events-none">
-        <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold">2023</span>
-      </div>
-    
-    <a style="--stagger:0" href="/02/GravediggerOfBrokenEra" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 第七章&后记 破碎时空的掘墓人
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          9月 29
-          ·
-          17 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:1" href="/02/FinalDeusExMachina" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 第六章 最后的机械降神
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          9月 24
-          ·
-          15 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:2" href="/02/TheKnightTheDemonTheJoker" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 第五章 血月樱花之国
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          9月 10
-          ·
-          16 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:3" href="/02/LostChapterOne" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 遗失之章 三色的向死而生
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          7月 17
-          ·
-          10 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:4" href="/02/MessUpWithTheTruth" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 第四章 通向真相的枝叶
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          3月 14
-          ·
-          10 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:5" href="/02/FakeLie" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 第三章 伪证者的忧郁午后
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          3月 12
-          ·
-          10 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:6" href="/02/TheKnownUnknown" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 第二章 烟雨之花的破灭
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          2月 19
-          ·
-          10 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:7" href="/02/MissingPower" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          御伽之国的鬼岛 序&第一章 阿加尔塔的风神
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          2月 19
-          ·
-          15 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-      <div class="relative pointer-events-none">
-        <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold">2022</span>
-      </div>
-    
-    <a style="--stagger:8" href="/02/LinearGod1" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          塑料时代：线性造神术[1]
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          9月 17
-          ·
-          3 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:9" href="/02/Paranoian" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/02/Paranoian" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
           《狂人日记》——吃人究竟是怎么一回事
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 25
-          ·
-          2 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:10" href="/02/FallenSleeplessNight2" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          黄金时代：失落失眠的黄金之城之夜[2]
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 15
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:11" href="/02/GoldenSleeplessNight" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/02/GoldenSleeplessNight" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
           黄金时代：失落失眠的黄金之城之夜[1]
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 15
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
     
-    
-    <a style="--stagger:12" href="/02/PureGold" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          黄金时代：赤金之地
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 09
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:13" href="/02/Weightless" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          塑料时代：轻盈者
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 07
-          ·
-          10 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:14" href="/02/BronzeAge" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          赝品青铜器的挽歌
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          7月 13
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:15" href="/02/44ForFore" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          轻盈者44号上的归途
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          6月 30
-          ·
-          6 min
-        </p>
-      </section>
-    </a>
-  
+
+  </div>
 </section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
 
 
   </main>

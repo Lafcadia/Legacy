@@ -19,7 +19,7 @@
 
 
 
-<title>归档: 2022/7 | Legacy</title>
+<title>塑料时代：线性造神术[1] | Legacy</title>
 
 
 
@@ -158,7 +158,7 @@
         </h2>
       </a>
       <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
-        
+        塑料时代：线性造神术[1]
       </div>
       <div class="flex-1"></div>
       <div class="flex items-center gap-3">
@@ -204,42 +204,158 @@
 </div>
 
   <main class="pt-14">
-    <section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">
-  <div class="flex flex-col h-48 items-center justify-center">
-    <h1 class="site-title text-4xl leading-relaxed">
-      Legacy
-    </h1>
-    <p class="text-gray-500 mt-2">
-      旧物站
-    </p>
-  </div>
-  
-  
-    
-    
-      <div class="relative pointer-events-none">
-        <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold">2022</span>
-      </div>
-    
-    <a style="--stagger:0" href="/02/BronzeAge" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          赝品青铜器的挽歌
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+<!-- toc -->
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        塑料时代：线性造神术[1]
+      </h1>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
+            <time>2023-12-26</time>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
+            <span>3 min</span>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
+            <span>1.1k words</span>
+          </span>
           
-        </p>
-        <p class="line-clamp-4">
-          7月 13
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
+    <p>（故事发生在《塑料时代：轻盈者》结局的十四年之后）</p>
+<p>超级英雄漫画在我的幼年还在最后的兴盛期。我对于英雄们的行为产生原始的膜拜，那些行走在日光之下的神明深深地吸引着我。他们是活着的，充盈着生命力的神像。受之启发，我创作了我自己的漫画。最初是一种简朴的爱好，后来不知道从哪里拥有了发到网上的自信，我迎来了嘲讽，到后来甚至连喷的人都没有，最后我竟然因为政治正确的原因被某些人举报了。</p>
+<p>我现在理解那些信仰宗教的人了，虽然神明都如同我所创造的神像，其内核是极致的空虚。但此刻，除了它以外，我一无所有了。漫画艺术的力量被视频超过，短视频又后来居上，最终一种名为信息流体的技术开始流行起来。它是一种可以让你通过饮用饮料获得信息的技术，最近几年才活跃起来的。而它的发明者，正是最痛恨这种反自由的、快餐式的东西的人。他的真正的名字经过十年的斗争，早已被人们忘却，作为「逆视」组织的一把手，他被称作「轻盈者」，这是他在表演时使用的艺名。没人真的记得他的真名，但他曾创下无数壮举，他逃出过黑洞，身体免疫几乎已知的所有病毒。而他在与他称之为「生命陷阱」的外星毒品接触时，使用逆向工程找到了向大脑直接输入信息的方式。他最热爱自由，这是他创立组织的原因；他又想要约束自由，这是他解构发明这种信息流体并把它的原理公开的原因。</p>
+<p>作为「逆视」的一个较下层的成员，我自然无法与那种大人物接触。我在「逆视」中的工作很简单，去回收战死的组织成员的遗体，进行肉体克隆，而组织保留这些成员所谓灵魂的一部分，从而让这些队友「完整的」复活。而今天早晨，一个奇特构造的外星飞船在蓬莱横空而降，为了全歼敌人，数十名成员牺牲了。而组织高层就此事开了一个会议，这是我们有史以来最大的伤亡，虽然组织承诺能够「复活」，但是进行复活的成本不低；还有，敌人貌似并没有携带任何的武器，他们看到飞船被包围之后，快速地使飞船自毁了。</p>
+<p>而我此刻却要在飞船坠毁的地方，寻找敌人与我们的残骸，确保能够收集足够多的外星科技。而就在我挖掘的时候，地底伸出了两条黑色的线条抓住了我的手，然后一种强大的能量将我的身体包裹住了。我醒来时，已经不在地球上了，我的左手上，出现两根涌动的黑色线条。突然，我面前出现了一个身影，那正是我心中的神明的样貌，可是，它是我所创造出来的，我对于它甚至都没有完整的定义。它一点一点的靠近，我感受到了灵魂的凉意，我的身体被麻痹，紧接着我的心中充满了虔诚，仿佛已然成为了它的信徒。然后我看着它，仿佛祈求主赐予我爱，向祂张开手。</p>
+<p>门被打开了，从中飞出一道蓝色的粒子流，放出一道蓝色的光芒，切断了这个美丽的幻象，它又化作椅子，强行让我坐在上面，我动弹不得，我手上的黑线却仍然活动着。然后他走了进来，拿出一把激光枪，击断了黑线，说：「我是『轻盈者』，刘淳，你克服了你自己的欲望，在最后一刻启动了传送器，到达了地面基地。地面上的家伙清理了一点你的记忆，然后把你送到了月海基地，这样方便对你身上的刚刚控制了你的科技进行斩草除根。不过我看着它的活性还很强。你刚醒，不如我们聊两句吧。」</p>
+<p>「你知道『线性造神术』是什么吗？」</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E7%99%BD%E9%93%B6%E6%A0%91%E4%B9%8B%E6%81%8B/">白银树之恋</a>
+        </span>
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/02/MissingPower" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          御伽之国的鬼岛 序&第一章 阿加尔塔的风神
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/02/Paranoian" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          《狂人日记》——吃人究竟是怎么一回事
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+
+  </div>
 </section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
 
   </main>
   <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">

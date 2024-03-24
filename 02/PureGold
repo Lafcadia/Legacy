@@ -19,7 +19,7 @@
 
 
 
-<title>归档: 2022/8 | Legacy</title>
+<title>黄金时代：赤金之地 | Legacy</title>
 
 
 
@@ -158,7 +158,7 @@
         </h2>
       </a>
       <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
-        
+        黄金时代：赤金之地
       </div>
       <div class="flex-1"></div>
       <div class="flex items-center gap-3">
@@ -204,122 +204,161 @@
 </div>
 
   <main class="pt-14">
-    <section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">
-  <div class="flex flex-col h-48 items-center justify-center">
-    <h1 class="site-title text-4xl leading-relaxed">
-      Legacy
-    </h1>
-    <p class="text-gray-500 mt-2">
-      旧物站
-    </p>
-  </div>
-  
-  
-    
-    
-      <div class="relative pointer-events-none">
-        <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold">2022</span>
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+<!-- toc -->
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        黄金时代：赤金之地
+      </h1>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
+            <time>2023-12-26</time>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
+            <span>4 min</span>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
+            <span>1.3k words</span>
+          </span>
+          
+        </section>
       </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
+    <p>（收录于《白银树之恋》，这是黄金时代篇的支线）</p>
+<p>射日的英雄曾在此地遗失了镜子，人们又把这里遗失了。如今只有我一个人，我是赤金之地的守墓人。</p>
+<p>赤金之地本来有个极为先进的国家，人民安稳而不求奢靡，生产力也在不断进步。后来人们普遍认为，自己的生活已经够好了，于是这里成为了一个不再进步的乌托邦。但出现了一个岔子，那就是学者们发现了后羿之盘的奥秘。</p>
+<p>「我们由此明白了，后羿的悲剧(见<a target="_blank" rel="noopener" href="https://chuishen.xyz/01/%E8%B5%9D%E5%93%81%E9%9D%92%E9%93%9C%E5%99%A8%E7%9A%84%E6%8C%BD%E6%AD%8C-1.html">《青铜器》</a>)是人为的，或者说是神为的。神明们安排了一场骗局，他们特意去让后羿注视月亮，让他陷入疯狂。然后用生命陷阱这种狡诈的手段来欺骗这位失去妻子，失去一切的英雄。他们给他留下了这面铜盘，暗示他这面铜盘就是月影，但后羿是无论如何也在其中无法找到嫦娥的身影，因为这里面映照的是另一个时空的月。我们不知道这里面的是在什么地方，什么时间。现在我们可以通过我们解析出的其中的空间坐标来得知月的具体位置和所处的时间轴。」大学者克洛诺斯为自己的成果感到自豪。</p>
+<p>这时候，我站了起来，我对站在台上的学者说：「你怎么知道这不会又是一场骗局？万一神明们恼怒了，而把我们一起算计了呢？谁能够逃出生命陷阱？」克洛诺斯看着自己的成果被人质疑，恼羞成怒，把我赶出了议事厅。</p>
+<p>我尽力了，我已经尽了我所能付出的最大努力来拯救这个国家了，这个时代的人类还没有接触这么高等级的神代科技的经验。他们也不懂得像黑铁时代的人们一样去为自己的科技成果负责任。现在是时候给他们一点教训了。</p>
+<p>时间已到，克洛诺斯和他的同僚们打开了传送门，发送了一枚时间引擎，传递着友好的信息。然而它却没有回来，消失在了茫茫的深空里。突然，一阵能量粒子雨撕碎了会场，所有在场的人类当场毙命。克洛诺斯，傲慢的人类，最终还是为了自己的求知欲而害死了自己。而一只太空战舰在粒子雨上方的大气层中现形。很快，众人意识到了敌人的到来，他们准备好了防御，结果是太空战舰上的人们意识到仅靠自己的力量无法统治这个庞大先进的国家。只好逐渐蚕食这个国家的思想体系。他们逐步渗透，传播来自他们的未来时代的虚无思想。</p>
+<p>的确在他们的未来中，一切都是虚无的。人类在经历最后的生物基因遗传后将近3000年，资源被耗尽，人类逐渐转化成另一种机械生物。最终它将走向终结。但克洛诺斯的愚蠢使他们拥有了时间引擎技术。他们花了数百年的研究，终于跨过时间的封锁，回到了黄金时代，蚕食自己的过去为生。这个时代的人类接触不了这种思想，他们太脆弱了，他们本来就是在快速发展中极容易被拔苗助长的人。而未来人潜移默化的灌输，将他们本来就不完整的思想体系给彻底破坏了。</p>
+<p>人们意识到未来人给他们带来的恶性时，已经太晚了。未来人已经采集了足够的资源，回到了未来。而他们给这个地方回赠了一份「礼物」，那就是用未来科技制作的金手指。这个时代最贪婪的人最终被洗脑了，被完全地控制了，他疯狂的贪恋黄金，他最终将所见之物全部变成了金子，包括他自己。最终这金色的国度被掩盖在了沙丘之下。</p>
+<p>长生不老何尝不是所谓的生命陷阱呢？我对神明的怨恨究竟何时能够终止？我本想要拿回我的铜盘，但转念一想，不如还是留下吧，万一有什么人能够看到呢？于是我将一座沙丘化作了一棵参天大树，在上面刻了如此几个字：「赤金国，西域大国也，盖其民贪金，其民化金而死。」然后望向远方醒来的马队，马队的队长手执着鞭子，赶着夕阳，我看着升起的月亮，不禁流下眼泪。于是我向着月升之方而行，让这赤金之地的灭亡成为我一生的教训。</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
     
-    <a style="--stagger:0" href="/02/Paranoian" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          《狂人日记》——吃人究竟是怎么一回事
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 25
-          ·
-          2 min
-        </p>
-      </section>
-    </a>
-  
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E7%99%BD%E9%93%B6%E6%A0%91%E4%B9%8B%E6%81%8B/">白银树之恋</a>
+        </span>
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+        </span>
+      
     
-    
-    <a style="--stagger:1" href="/02/FallenSleeplessNight2" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          黄金时代：失落失眠的黄金之城之夜[2]
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 15
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:2" href="/02/GoldenSleeplessNight" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/02/GoldenSleeplessNight" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
           黄金时代：失落失眠的黄金之城之夜[1]
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 15
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:3" href="/02/PureGold" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          黄金时代：赤金之地
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 09
-          ·
-          4 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:4" href="/02/Weightless" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/02/Weightless" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
           塑料时代：轻盈者
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          8月 07
-          ·
-          10 min
-        </p>
-      </section>
-    </a>
-  
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+
+  </div>
 </section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
 
   </main>
   <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
